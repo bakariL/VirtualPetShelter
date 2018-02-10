@@ -15,7 +15,7 @@ namespace VpShelter
         //private int hungar; //feed
         //private bool isBord = true; //boredomn
 
-        //Properties 3
+        //Properties 4
         public string Name { get; set; }
         public int Thirst{get; set;  }
         public int Hungar{ get; set; }
