@@ -46,7 +46,8 @@ namespace VpShelter
         //managers
         Manager managerOne = new Manager();
         List<Manager> managerList = new List<Manager>();
-      //  instansite a liste of animal objects
+        //  instansite a liste of animal objects
+        
 
         //method
         public void SeeAnimalList()
@@ -54,6 +55,8 @@ namespace VpShelter
 
             return ;
         }
+
+
         
 
 

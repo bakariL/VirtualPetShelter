@@ -8,9 +8,12 @@ namespace VpShelter
 {
    public  class  Manager : Employee
     {
+
+        private int salary = 10000;
         //properties
 
             public int Salary { get; set; }
+
 
         //contructors
         public Manager()
@@ -27,7 +30,8 @@ namespace VpShelter
         //feed it 
         public override void Feed()
         {
-            Console.WriteLine("Thanks, that was yummy!");
+            Console.WriteLine("Thanks, that was yummy!" );
+            
         }
         //thirst
         public override void Water()
@@ -51,7 +55,7 @@ namespace VpShelter
             Console.WriteLine("Thanks for aopting me!");
         }
         //pay the bills
-        public static void PayBills()
+        public  void PayBills()
         {
             Console.WriteLine("Bills are PAID!! YAY!!!");
         }

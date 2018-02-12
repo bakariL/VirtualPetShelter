@@ -10,8 +10,8 @@ namespace VirtualDog
     {
         //Fields
         private string name;
-        private int energy;
-        private int hungar;
+        private int energy = 75;
+        private int hungar = 75;
         private bool isBord = true;
 
         //Properties 3
@@ -107,6 +107,16 @@ namespace VirtualDog
             }
         }
 
+
+        public void Eating()
+        {
+            Hungar -= 35;
+        }
+        public void Playing()
+        {
+            Energy -= 25;
+            Hungar += 42;
+        }
         public void Tick()
         {
             if (isBord)
@@ -115,7 +125,7 @@ namespace VirtualDog
             }
             else
             {
-                hungar -= hungar;
+                hungar -= 15;
             }
         }
 

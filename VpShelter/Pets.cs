@@ -49,7 +49,7 @@ namespace VpShelter
             RawMeat = "Aspargus";
             
 
-            Console.WriteLine("Name      |Hungar    |Thrist   | Boredom");
+            Console.WriteLine("Name      |Hungar    |Thrist   | Boredec");
             Console.WriteLine( "_______ __| _________|_________|_________");
             Console.WriteLine(  Dog + "      " + Hungar+  "           " +"" +Energy +"         "+ Isbord );
             Console.WriteLine("----------|---------- |----------|----------");
@@ -76,5 +76,23 @@ namespace VpShelter
         {
             Console.WriteLine("Congrats! You have apodted " + Lion + " please feed him " + RawMeat);
         }
+
+        public void DogEating()
+        {
+            Energy += 15;
+        }
+
+        public void CatEating()
+        {
+            Energy += 15;
+        }
+
+        public void PPaying()
+        {
+            Energy -= 20;
+            Isbord = false;
+        }
+
+
     }
 }

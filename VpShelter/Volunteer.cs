@@ -8,7 +8,8 @@ namespace VpShelter
 {
     public  class Volunteer : Employee
     {
-
+      
+       
         //props
         public string VolunteerName { get; set; }
 
