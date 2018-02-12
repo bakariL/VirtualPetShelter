@@ -8,10 +8,7 @@ namespace VpShelter
 {
     public class VirtualPetShelter
     {
-        //instansite a list of employee objects 
         
-    
-
         //prop
         public string PetHouse { get; set; }
         public string EmployeeLounge { get; set; }
@@ -56,8 +53,35 @@ namespace VpShelter
             return ;
         }
 
+        //Pets firstPet = new Pets();
+        //{
+        //    List<Pets> petList = new List<Pets>() {
 
-        
+        // new Pets()
+        // {  Dog = "Bill the BullDog" , DogFood = "Kibbles & Bites", Hungar = 50, Thirst = 45, IsBord = true },
+        // new Pets()
+        // {
+        //     Cat = "Garfieild",  CatFood = "Meow Mix", Hungar = 25, Thirst = 60, IsBord = true },
+
+        // new Pets()
+        // {
+        //     Lion = "Simba", RawMeat = "Live Animals", Hungar = 75, Thirst = 50, IsBord = true
+        // }
+        //};
+
+
+        //    foreach (Object Pets in petList)
+        //    {
+
+        //        Console.WriteLine(Pets);
+        //    }
+
+        //List<Pets> petsList = new List<Pets>() {
+        //new Pets() { Name = "Barki" }
+        //};
+
+
+
 
 
     }
