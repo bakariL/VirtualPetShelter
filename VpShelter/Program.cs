@@ -335,46 +335,43 @@ namespace VpShelter
                         Console.ReadLine();
                         Start();
                     }
-
-            else if (volunteerInput == 3)
+                }
+                else if (volunteerInput == 3)
+                {
+                    Console.WriteLine("Which pet would you like to play with: Dog Cat, Or Lion");
+                    string playPet = Console.ReadLine().ToUpper();
+                    if (playPet == "DOG")
                     {
-                        Console.WriteLine("Which pet would you like to play with: Dog Cat, Or Lion");
-                        string playPet = Console.ReadLine().ToUpper();
-                        if (playPet == "DOG")
-                        {
-
-                           
-                            //volunteer play with pet
-                            Console.Clear();
-                            volunteer.Play();
-                            petOne.PPaying();
-                            Console.WriteLine("Push enter to keep playing");
-                            Console.ReadLine();
-                            Start();
-                        }
-                        else if(playPet == "CAT")
-                        {
-                            
-                        }
-
-                    }
-                    else if (volunteerInput == 4)
-                    {
-                        //method for quitting
-                    }
-                    else
-                    {
-                        Console.WriteLine("Please enter number between 1-4");
+                        //volunteer play with pet
+                        volunteer.Play();
+                        petOne.PPaying();
                         Console.WriteLine("Push enter to keep playing");
                         Console.ReadLine();
                         Start();
                     }
+                    else if (playPet == "CAT")
+                    {
 
+                    }
 
                 }
+                else if (volunteerInput == 4)
+                {
+                    //method for quitting
+                }
+                else
+                {
+                    Console.WriteLine("Please enter number between 1-4");
+                    Console.WriteLine("Push enter to keep playing");
+                    Console.ReadLine();
+                    Start();
+                }
+
 
             }
+
         }
+    
 
 
 //***********************************************************************************************************************//
