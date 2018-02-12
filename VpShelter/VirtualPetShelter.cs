@@ -8,13 +8,14 @@ namespace VpShelter
 {
     public class VirtualPetShelter
     {
-        private string listofPets;
-
+        //instansite a list of employee objects 
+        
+    
 
         //prop
         public string PetHouse { get; set; }
         public string EmployeeLounge { get; set; }
-        public List<Pets> ListofPets { get; set; }
+        public List<Pets> PetList { get; set; }
 
 
         //contructors
@@ -23,41 +24,37 @@ namespace VpShelter
             //default
         }
 
-        public VirtualPetShelter(string petHouse, string employeeLounge)
+        public VirtualPetShelter(string petHouse, string employeeLounge, List<Pets> petList)
         {
             this.PetHouse = petHouse;
             this.EmployeeLounge = employeeLounge;
-            //instansite a list of employee objects 
-            Volunteer volunteerOne = new Volunteer();
-            List<Volunteer> volunteerList = new List<Volunteer>();
-            //managers
-            Manager managerOne = new Manager();
-            List<Manager> managerList = new List<Manager>();
-
-            //instansite a liste of animal objects
-            Pets firstPet = new Pets();
-            List<Pets> petsList = new List<Pets>() {
-            new Pets() { Name = "Barki" }
-            };
+            this.PetList = petList;
+           
         }
 
-        public VirtualPetShelter(List<Pets> listofPets)
+        public VirtualPetShelter(List<Pets> petList, string dog, string cat, string Lion)
         {
-            this.ListofPets = listofPets;
+            this.PetList = petList;
+            this.PetList = PetList;
+            
+
         }
 
-        public VirtualPetShelter(string listofPets)
-        {
-            this.listofPets = listofPets;
-        }
+
+        Volunteer volunteerOne = new Volunteer();
+        List<Volunteer> volunteerList = new List<Volunteer>();
+        //managers
+        Manager managerOne = new Manager();
+        List<Manager> managerList = new List<Manager>();
+      //  instansite a liste of animal objects
 
         //method
-        public void SeeAnimalList<Pets>(List<Pets> petsList)
+        public void SeeAnimalList()
         {
 
-
-            Console.WriteLine(petsList);
+            return ;
         }
+        
 
 
     }
